@@ -1,0 +1,28 @@
+{
+  "name": "frontend-tests",
+  "version": "1.0.0",
+  "description": "A couple of examples of front-end tests using Gulp, Jasmine and WebdriverIO.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surf66/frontend-tests.git"
+  },
+  "keywords": [
+    "Gulp",
+    "Jasmine",
+    "WebdriverIO"
+  ],
+  "author": "Tom Pennington",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surf66/frontend-tests/issues"
+  },
+  "homepage": "https://github.com/surf66/frontend-tests",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "run-sequence": "^1.1.1",
+    "selenium-standalone": "^4.4.2",
+    "webdriverio": "^2.4.5",
+    "gulp-jasmine": "^2.0.1",
+    "jasmine-reporters": "^2.0.6"
+  }
+}

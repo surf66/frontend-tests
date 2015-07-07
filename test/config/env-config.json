@@ -1,0 +1,5 @@
+{
+    "dev": "http://yourdevurl.dev",
+    "qa": "http://yourqaurl.com",
+    "prod": "http://tompennington.co.uk"
+}

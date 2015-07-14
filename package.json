@@ -20,9 +20,9 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "run-sequence": "^1.1.1",
-    "selenium-standalone": "^4.4.2",
-    "webdriverio": "^2.4.5",
-    "gulp-jasmine": "^2.0.1",
+    "selenium-standalone": "4.4.2",
+    "webdriverio": "2.4.5",
+    "gulp-jasmine": "2.0.1",
     "jasmine-reporters": "^2.0.6"
   }
 }

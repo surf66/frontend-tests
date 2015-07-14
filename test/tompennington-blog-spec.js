@@ -8,12 +8,11 @@ describe("tompennington blog", function() {
 
     beforeEach(function() {
         client = testConfig.getWebdriver();
-        client.init();
+        client.init().url(baseUrl);
     });
 
     it("should have a title tag set", function(done) {
         client
-            .url(baseUrl)
             .getTitle(function(err, title) {
                 expect(title).toEqual("Tom Pennington");
             })
@@ -22,7 +21,6 @@ describe("tompennington blog", function() {
 
     it("author link should link to the about page", function(done) {
         client
-            .url(baseUrl)
             .click(blogPageObject.aboutLink)
             .url(function(err, res) {
                 expect(res.value).toEqual("http://tompennington.co.uk/about-me/")

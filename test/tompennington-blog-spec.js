@@ -21,9 +21,6 @@ describe("tompennington blog", function() {
 
   it("should show menu after clicking menu button", function(done) {
     client
-      .isVisible(".nav").then(function(isVisible) {
-        expect(isVisible).toBe(false);
-      })
       .click(".menu-button").then(function() {
         this.isVisible(".nav").then(function(isVisible) {
           expect(isVisible).toBe(true);

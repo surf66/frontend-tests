@@ -2,7 +2,9 @@
 process.env.NODE_ENV = 'prod';
 
 var webdriverio = require("webdriverio"),
-    config      = require("./env-config.json");
+    config = require("./env-config.json"),
+    phantomjs = require('phantomjs'),
+    binPath = phantomjs.path;
 
 module.exports = {
     /**
@@ -10,7 +12,13 @@ module.exports = {
      */
     getWebdriver: function() {
         var client = {};
-        client = webdriverio.remote({desiredCapabilities: {browserName: 'chrome'}});
+        client = webdriverio.remote({
+          desiredCapabilities: {
+            browserName: 'phantomjs',
+            'phantomjs.binary.path': binPath,
+            'phantomjs.cli.args': ['--ignore-ssl-errors=yes']
+          }
+        });
         return client;
     },
     /**
